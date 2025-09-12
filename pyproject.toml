@@ -1,0 +1,29 @@
+[project]
+name = "livekit-voice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python =  ">=3.11, <3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.116.1",
+    "langchain>=0.3.27",
+    "langchain-mcp-adapters>=0.1.9",
+    "langchain-openai>=0.3.32",
+    "langgraph>=0.6.6",
+    "livekit>=1.0.12",
+    "livekit-agents[cartesia,deepgram,elevenlabs,groq,multimodal,openai,silero,tavus,turn-detector]~=1.2",
+    "livekit-api>=1.0.5",
+    "livekit-plugins-cartesia>=1.2.6",
+    "livekit-plugins-deepgram>=1.2.6",
+    "livekit-plugins-elevenlabs>=1.2.6",
+    "livekit-plugins-langchain>=1.2.6",
+    "livekit-plugins-noise-cancellation~=0.2",
+    "livekit-plugins-openai>=1.2.6",
+    "livekit-plugins-silero>=1.2.6",
+    "mem0ai>=0.1.117",
+    "python-dotenv>=1.1.1",
+    "torch>=2.8.0",
+    "torchaudio>=2.8.0",
+    "uvicorn[standard]>=0.35.0",
+]
