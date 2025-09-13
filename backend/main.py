@@ -92,7 +92,7 @@ async def entrypoint(ctx: JobContext):
         room=ctx.room,
         room_input_options=RoomInputOptions(
             video_enabled=True,
-            audio_enabled=False,
+            audio_enabled=True,
             noise_cancellation=noise_cancellation.BVC()
         )
     ))

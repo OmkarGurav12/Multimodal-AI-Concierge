@@ -23,10 +23,9 @@ async def initialize_mcp_client():
     """Initialize the MCP client globally and return tools with server names."""
     global mcp_client
     
-    if not Config.COMPOSIO_MCP_URL:
-        raise ValueError("COMPOSIO_MCP_URL environment variable is required")
     
-    logging.info(f"🔗 Connecting to MCP servers: {Config.COMPOSIO_MCP_URL}, {Config.N8N_MCP_SERVER_URL}")
+    
+    logging.info(f"🔗 Connecting to MCP servers: {Config.COMPOSIO_MCP_URL}")
     
     mcp_client = MultiServerMCPClient({
         "composio": {"url": Config.COMPOSIO_MCP_URL, "transport": "streamable_http"},
